@@ -1,0 +1,101 @@
+:root {
+  --primary-color: #1f2937; /* Slate 800 */
+  --secondary-color: #3b82f6; /* Blue 500 */
+  --background-color: #a8abae; /* Gray 50 */
+  --white: #ffffff;
+  --navy:#1797c68d;
+  --red: #dc2626;
+  --border-color: #e5e7eb; /* Gray 200 */
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--primary-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: var(--navy);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.note-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  cursor: pointer;
+  
+}
+
+.button:hover {
+  background-color: #2563eb; /* لون أغمق للزر عند التحويم */
+}
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.note-item {
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-item span {
+  flex-grow: 1;
+}
+
+.button.delete {
+  background-color: var(--red);
+}
+
+.button.delete:hover {
+  background-color: #b91c1c;
+}
